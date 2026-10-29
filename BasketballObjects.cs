@@ -26,6 +26,7 @@ namespace MohawkGame2D
         }
         public void SpawnBasketball(float BallMultiplier)
         { //This function spawns 5 basketballs for 1 frame when 'B' is being held down (or 'SPACEBAR')
+          //More basketballs can appear when you tap a number on your keyboard, indicated by the sun's strength
             if (Input.IsKeyboardKeyDown(KeyboardKey.B) || Input.IsKeyboardKeyDown(KeyboardKey.Space))
             {
                 for (int i = 0; i < 5*BallMultiplier; i++)
